@@ -1,0 +1,95 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "commentCollection",
+    "dateExported": "2024-03-04T16:28:14.740Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e5816be6-7687-464c-bdea-a4ee70db0f9e",
+            "colId": "93792f46-8857-4a8c-8710-9acf24b0de59",
+            "containerId": "",
+            "name": "commentPost",
+            "url": "http://localhost:3000/opinionManager/v1/comments/65e46ffb841725901a41d825",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T14:24:56.587Z",
+            "modified": "2024-03-04T14:50:38.136Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0NWFjNThiY2NhNmFjZjVjMGJlY2QiLCJpYXQiOjE3MDk1NjIzNDIsImV4cCI6MTcwOTU2NTk0Mn0.heOb3Vx2IXrvWXwckODkwW6d5OFTFx0m8HiKijVpMZk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"Publicacion mas basurita\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2233ea4b-f7a1-473a-bf49-416791c24389",
+            "colId": "93792f46-8857-4a8c-8710-9acf24b0de59",
+            "containerId": "",
+            "name": "commentsForUser",
+            "url": "http://localhost:3000/opinionManager/v1/comments",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-04T16:20:10.703Z",
+            "modified": "2024-03-04T16:21:57.215Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0NWFjNThiY2NhNmFjZjVjMGJlY2QiLCJpYXQiOjE3MDk1NjkyOTgsImV4cCI6MTcwOTU3Mjg5OH0.7b0UoGF4AYcJsVAA9ifguHSkGaT9QsMLMZq9Up0qmlc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "202e9320-2cb6-4fad-8e03-c62ba08b177a",
+            "colId": "93792f46-8857-4a8c-8710-9acf24b0de59",
+            "containerId": "",
+            "name": "commentPut",
+            "url": "http://localhost:3000/opinionManager/v1/comments/65e5dfbe8e191515a629f982",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-04T16:22:48.271Z",
+            "modified": "2024-03-04T16:25:50.220Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInm5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0NWFjNThiY2NhNmFjZjVjMGJlY2QiLCJpYXQiOjE3MDk1NjkyOTgsImV4cCI6MTcwOTU3Mjg5OH0.7b0UoGF4AYcJsVAA9ifguHSkGaT9QsMLMZq9Up0qmlc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"text\": \"PUBLICACION MAS BASURITA\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0ca3494b-91cf-4d05-81d0-fa274d82bcce",
+            "colId": "93792f46-8857-4a8c-8710-9acf24b0de59",
+            "containerId": "",
+            "name": "commentDelete",
+            "url": "http://localhost:3000/opinionManager/v1/comments/65e5dfbe8e191515a629f982",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-04T16:25:35.738Z",
+            "modified": "2024-03-04T16:27:15.268Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0NWFjNThiY2NhNmFjZjVjMGJlY2QiLCJpYXQiOjE3MDk1NjkyOTgsImV4cCI6MTcwOTU3Mjg5OH0.7b0UoGF4AYcJsVAA9ifguHSkGaT9QsMLMZq9Up0qmlc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

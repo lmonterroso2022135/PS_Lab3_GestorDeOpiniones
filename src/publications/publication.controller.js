@@ -35,10 +35,13 @@ export const publicationsPost = async (req, res) => {
 export const publicationsGet = async (req, res = response) => {
     const query = {state: true};
 
-    const [total, publications] = await Promise.all([
-        Publication.countDocuments(query),
-        Publication.find(query).populate('user', 'username')
-    ]);
+    const publications = await Publication.find(query)
+        .populate('user', 'username')
+        .populate({
+            path: 'comments',
+            select: 'text'
+    });
+    const total = publications.length;
 
     res.status(200).json({
         total,
@@ -54,6 +57,8 @@ export const publicationForUserGet = async (req, res)=>{
         const publications = await Promise.all([
             Publication.find(query).populate('user', 'username')
         ]);
+
+        
         res.status(200).json({
             msg: `${username} publications`,
             publications
@@ -67,22 +72,31 @@ export const publicationForUserGet = async (req, res)=>{
 // Buscar publicacion
 export const publicationGetById = async  (req, res) =>{
     const {id} = req.params;
-    const publication = await Publication.findOne({_id: id});
-    
+    const publication = await Publication.findOne({_id: id})
+    .populate('user', 'username')
+        .populate({
+            path: 'comments',
+            select: 'text'
+    });
 
     res.status(200).json({
         publication
     });
 }
-
-
 // Editar publicacion
 export const publicationPut = async (req, res = response) =>{
     const {_id: _idUser, username} = req.user;
     const {id} = req.params;
-    const {_id: _idPublication, ...resto} = req.body;
+    const {...resto} = req.body;
     
     const publication = await Publication.findById(id);
+
+    if(!publication){
+        throw new Error(`Publication doesnt exists in the database`);
+    }
+    if(!publication.state){
+        throw new Error(`Publication has been deleted`);
+    }
 
     const idUser = _idUser.toString();
     const idUserP = publication.user._id.toString();
