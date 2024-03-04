@@ -1,0 +1,123 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "publicationCollection",
+    "dateExported": "2024-03-04T04:45:22.594Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e1253f63-f43b-42ad-b1fe-b713a7845ba2",
+            "colId": "07dc0ac4-6df1-441f-97be-31ffd8e2ef69",
+            "containerId": "",
+            "name": "publicationPost",
+            "url": "http://localhost:3000/opinionManager/v1/publications",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T11:49:37.966Z",
+            "modified": "2024-03-03T12:42:53.213Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0NzAzN2E0NjQ4MDM5MjIyNTBjY2MiLCJpYXQiOjE3MDk0Njk3NjAsImV4cCI6MTcwOTQ3MzM2MH0.BjXWhRPKYN_64sEVZa3KEve5hxI1uaPBJQ0bVftMKXU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"asdfsdf\",\n  \"category\": \"sdfasdf\",\n  \"text\": \"sdasfd\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "920085c7-4f7e-482f-931e-34d722572e43",
+            "colId": "07dc0ac4-6df1-441f-97be-31ffd8e2ef69",
+            "containerId": "",
+            "name": "publicationsGet",
+            "url": "http://localhost:3000/opinionManager/v1/publications",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-03T12:38:51.132Z",
+            "modified": "2024-03-03T12:56:09.357Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16a50554-7643-48a8-b079-69eb408466b7",
+            "colId": "07dc0ac4-6df1-441f-97be-31ffd8e2ef69",
+            "containerId": "",
+            "name": "publicationsForUser",
+            "url": "http://localhost:3000/opinionManager/v1/publications/my",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-03T12:55:47.257Z",
+            "modified": "2024-03-03T12:56:58.624Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0NzAzN2E0NjQ4MDM5MjIyNTBjY2MiLCJpYXQiOjE3MDk0Njk3NjAsImV4cCI6MTcwOTQ3MzM2MH0.BjXWhRPKYN_64sEVZa3KEve5hxI1uaPBJQ0bVftMKXU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aedcd64d-6bb7-4fbf-8414-f44f86a14c76",
+            "colId": "07dc0ac4-6df1-441f-97be-31ffd8e2ef69",
+            "containerId": "",
+            "name": "publicationDelete",
+            "url": "http://localhost:3000/opinionManager/v1/publications/65e4704da464803922250cd0",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-03T13:15:35.152Z",
+            "modified": "2024-03-03T13:18:47.090Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0NWFjNThiY2NhNmFjZjVjMGJlY2QiLCJpYXQiOjE3MDk0NzE5MTQsImV4cCI6MTcwOTQ3NTUxNH0.iAuvATKARcScdI7GWL_su4GJVU5BqMzAYqr56LPNmbU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8ac9a796-0209-42ac-be77-ae540bc5b05a",
+            "colId": "07dc0ac4-6df1-441f-97be-31ffd8e2ef69",
+            "containerId": "",
+            "name": "publicationPut",
+            "url": "http://localhost:3000/opinionManager/v1/publications/65e46ffb841725901a41d825",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-03T13:53:14.904Z",
+            "modified": "2024-03-03T13:54:39.173Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0NWFjNThiY2NhNmFjZjVjMGJlY2QiLCJpYXQiOjE3MDk0NzE5MTQsImV4cCI6MTcwOTQ3NTUxNH0.iAuvATKARcScdI7GWL_su4GJVU5BqMzAYqr56LPNmbU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"AAAAAAAAAAAAAAAAA\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b0e31239-d5b2-4df0-8bec-d898f77a1a09",
+            "colId": "07dc0ac4-6df1-441f-97be-31ffd8e2ef69",
+            "containerId": "",
+            "name": "publicationDetails",
+            "url": "http://localhost:3000/opinionManager/v1/publications/65e4704da464803922250cd0",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-03T14:04:49.867Z",
+            "modified": "2024-03-03T14:05:30.139Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
